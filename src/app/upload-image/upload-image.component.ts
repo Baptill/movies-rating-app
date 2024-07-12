@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { createWorker } from 'tesseract.js'
 
 @Component({
   selector: 'app-upload-image',
@@ -9,6 +10,8 @@ import { Component } from '@angular/core';
 })
 export class UploadImageComponent {
   selectedImage: string | ArrayBuffer | null = null;
+
+
 
   async onFileSelected(event: Event): Promise<void> {
     const input = event.target as HTMLInputElement;
