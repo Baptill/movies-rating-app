@@ -1,10 +1,11 @@
+import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { createWorker } from 'tesseract.js'
+import { createWorker } from 'tesseract.js';
 
 @Component({
   selector: 'app-upload-image',
   standalone: true,
-  imports: [],
+  imports: [NgIf],
   templateUrl: './upload-image.component.html',
   styleUrls: ['./upload-image.component.css']
 })
